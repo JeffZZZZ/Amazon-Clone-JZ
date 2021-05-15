@@ -77,7 +77,7 @@ userRouter.put(
 userRouter.post(
 	'/login',
 	expressAsyncHandler(async (req, res) => {
-		const user = await User.findOne({ name: sanitize(req.body.username) });
+		const user = await User.findOne({ name: sanitize(req.body.name) });
 		if (user) {
 			if (bcrypt.compare(sanitize(req.body.password), user.password)) {
 				const token = generateToken(user);
