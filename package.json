@@ -13,7 +13,7 @@
     "server": "cd backend && nodemon server.js",
     "client": "cd frontend && npm start",
     "dev": "concurrently -n 'server,client' -c 'yellow,blue'  \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-frontend && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install:frontend && npm run build"
   },
   "author": "Jianfeng Zhang",
   "license": "ISC",
