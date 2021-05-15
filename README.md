@@ -4,7 +4,7 @@
 
 Install dependencies in root folder, backend folder and frontend folder:
 
-`npm install`
+`npm run install-all`
 
 Then run server and client concurrently:
 

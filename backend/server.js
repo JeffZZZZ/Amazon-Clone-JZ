@@ -19,7 +19,7 @@ app.use(
 	cors({
 		origin: [
 			'http://localhost:3000',
-			'https://https://senshop-cap805-group-10.herokuapp.com',
+			'https://amazon-clone-mern-jz.herokuapp.com/',
 		],
 		credentials: true,
 	})
