@@ -288,10 +288,7 @@ const AddProduct = () => {
 						/>
 						<span className='error'>{errorImage}</span>
 
-						<button
-							className='add-product-button'
-							type='submit'
-						>
+						<button className='add-product-button' type='submit'>
 							Submit
 						</button>
 					</form>

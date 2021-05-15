@@ -8,12 +8,11 @@ const Cart = () => {
 
 	useEffect(() => {
 		let currentTotal = 0;
-		cart.forEach(item => {
+		cart.forEach((item) => {
 			currentTotal += item.price * item.qty;
 		});
-		setTotal(currentTotal)
-		
-	}, [cart])
+		setTotal(currentTotal);
+	}, [cart]);
 
 	return (
 		<div className='cart'>
@@ -53,10 +52,10 @@ const Cart = () => {
 				</div>
 			)}
 
-			<div className="cart-total">
+			<div className='cart-total'>
 				<h4>Total</h4>
-				<div className="price-total">Total Price: $ {total}</div>
-				<button className="checkout-button">Checkout</button>
+				<div className='price-total'>Total Price: $ {total}</div>
+				<button className='checkout-button'>Checkout</button>
 			</div>
 		</div>
 	);

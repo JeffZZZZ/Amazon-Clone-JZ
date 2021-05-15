@@ -3,15 +3,15 @@ import Footer from '../components/Footer';
 import LoginForm from '../components/LoginForm';
 
 const LoginPage = () => {
-    return (
-        <>
-            <Header />
-            <main>
-                <LoginForm />
-            </main> 
-            <Footer />
-        </>
-    )
-}
+	return (
+		<>
+			<Header />
+			<main>
+				<LoginForm />
+			</main>
+			<Footer />
+		</>
+	);
+};
 
-export default LoginPage
+export default LoginPage;

@@ -6,27 +6,27 @@ import { useContext, useEffect, useState } from 'react';
 import ProductContext from '../context/ProductContext';
 
 const CategoryPage = (props) => {
-    const {products} = useContext(ProductContext);
-    const [productsByCategory, setProductsByCategory] = useState([]);
+	const { products } = useContext(ProductContext);
+	const [productsByCategory, setProductsByCategory] = useState([]);
 
-    useEffect(() => {
-        const newProducts = products.filter(product => {
-            return product.cateID === props.match.params.id;
-        });
+	useEffect(() => {
+		const newProducts = products.filter((product) => {
+			return product.cateID === props.match.params.id;
+		});
 
-        setProductsByCategory(newProducts);
-    }, [products, props.match.params.id])
-    
-    return (
-        <>
-            <Header />
-            <Navi />
-            <main>
-                <ProductList products={productsByCategory}/>
-            </main> 
-            <Footer />
-        </>
-    )
-}
+		setProductsByCategory(newProducts);
+	}, [products, props.match.params.id]);
 
-export default CategoryPage
+	return (
+		<>
+			<Header />
+			<Navi />
+			<main>
+				<ProductList products={productsByCategory} />
+			</main>
+			<Footer />
+		</>
+	);
+};
+
+export default CategoryPage;

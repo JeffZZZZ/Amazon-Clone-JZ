@@ -54,7 +54,7 @@ const Category = () => {
 				{categories.map((category, index) => {
 					let url = `/category/${category._id}`;
 					let imageLink = getFirstItemFromCate(category._id);
-                    let alt = `${category.desc} image`;
+					let alt = `${category.desc} image`;
 					return (
 						<Link to={url} key={index}>
 							<div className='category-block'>

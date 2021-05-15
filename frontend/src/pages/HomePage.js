@@ -7,18 +7,18 @@ import BestSeller from '../components/BestSeller';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
-    return (
-        <>
-            <Header />
-            <Navi />
-            <main>
-                <Promo />
-                <CategorySection />
-                <BestSeller />
-            </main> 
-            <Footer />
-        </>
-    )
-}
+	return (
+		<>
+			<Header />
+			<Navi />
+			<main>
+				<Promo />
+				<CategorySection />
+				<BestSeller />
+			</main>
+			<Footer />
+		</>
+	);
+};
 
-export default HomePage
+export default HomePage;

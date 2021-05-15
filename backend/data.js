@@ -19,7 +19,7 @@ const data = {
 			email: 'user@ac.com',
 			password: bcrypt.hashSync('111111', 8),
 			isAdmin: false,
-		}
+		},
 	],
 	categories: [
 		{

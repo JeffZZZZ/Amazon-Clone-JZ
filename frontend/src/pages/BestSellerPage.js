@@ -6,29 +6,29 @@ import { useContext, useEffect, useState } from 'react';
 import ProductContext from '../context/ProductContext';
 
 const BestSellerPage = () => {
-    const {products} = useContext(ProductContext);
-    const [bestSeller,setBestSeller] = useState([]);
+	const { products } = useContext(ProductContext);
+	const [bestSeller, setBestSeller] = useState([]);
 
-    useEffect(() => {
-        const bestSeller = products.filter((product) => {
-            return product.isBestSeller === true;
-        });
-        
-        setBestSeller(bestSeller)
-    },[products]);
+	useEffect(() => {
+		const bestSeller = products.filter((product) => {
+			return product.isBestSeller === true;
+		});
 
-    return (
-        <>
-            <Header />
-            <Navi />
-            <main>
-            {bestSeller && bestSeller.length !== 0 && (
+		setBestSeller(bestSeller);
+	}, [products]);
+
+	return (
+		<>
+			<Header />
+			<Navi />
+			<main>
+				{bestSeller && bestSeller.length !== 0 && (
 					<ProductList products={bestSeller} />
 				)}
-            </main> 
-            <Footer />
-        </>
-    )
-}
+			</main>
+			<Footer />
+		</>
+	);
+};
 
-export default BestSellerPage
+export default BestSellerPage;
